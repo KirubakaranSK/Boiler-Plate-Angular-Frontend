@@ -1,0 +1,22 @@
+<div class="login-container">
+    <h2>Login</h2>
+    
+    <!-- Reactive form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+      <!-- PrimeNG InputText for username -->
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <p-inputText id="username" formControlName="username"></p-inputText>
+      </div>
+  
+      <!-- PrimeNG Password for password -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <p-password id="password" formControlName="password"></p-password>
+      </div>
+  
+      <!-- PrimeNG Button to submit the form -->
+      <button pButton type="submit" label="Login"></button>
+    </form>
+  </div>
+  

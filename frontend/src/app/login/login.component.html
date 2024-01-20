@@ -2,21 +2,25 @@
     <h2>Login</h2>
     
     <!-- Reactive form -->
-    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+    <form [formGroup]="loginForm">
       <!-- PrimeNG InputText for username -->
       <div class="form-group">
-        <label for="username">Username:</label>
-        <p-inputText id="username" formControlName="username"></p-inputText>
+        <label for="username">Email:</label>
+        <input type="text" pInputText formControlName="email"/>
       </div>
   
       <!-- PrimeNG Password for password -->
       <div class="form-group">
         <label for="password">Password:</label>
-        <p-password id="password" formControlName="password"></p-password>
+        <input type="text" pInputText formControlName="password"/>
+
       </div>
   
       <!-- PrimeNG Button to submit the form -->
-      <button pButton type="submit" label="Login"></button>
+      <p-button (click)="onLoginSubmit()" label="Submit"></p-button>
+
+      <h3 routerLink="/Registration">New user</h3>
     </form>
   </div>
+<p-toast></p-toast>
   

@@ -1,1 +1,30 @@
-<p>registration works!</p>
+<div class="registration-container">
+    <h2>Registration</h2>
+  
+    <!-- Reactive form -->
+    <form [formGroup]="registrationForm">
+      <!-- PrimeNG InputText for username -->
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" pInputText formControlName="username"/>
+      </div>
+  
+      <!-- PrimeNG InputText for email -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" pInputText formControlName="email"/>
+      </div>
+  
+      <!-- PrimeNG Password for password -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" pInputText formControlName="password"/>
+      </div>
+  
+      <!-- PrimeNG Button to submit the form -->
+      <p-button (click)="onRegistrationSubmit()" label="Register"></p-button>
+
+      <h3 routerLink="/Login">Already have account</h3>
+    </form>
+  </div>
+  

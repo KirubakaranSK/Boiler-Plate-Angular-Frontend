@@ -1,0 +1,37 @@
+.registration-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, rgba(4, 35, 233, 0.669), rgb(86, 139, 232)); /* Updated background with linear gradient */
+    color: #fff; /* Added white text color for better contrast */
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* Set label text color to white */
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  h3{
+    cursor: pointer;
+  }
